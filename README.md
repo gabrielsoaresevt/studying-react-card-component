@@ -1,5 +1,9 @@
 # Card Component
 Primeiros passos com react: estrutura de pastas e criação de componentes.
 
-## 🛠 Execução
-No diretório do projeto execute: `npm start`
+### Status: em andamento...
+
+## 🛠 Instruções de instalação
+1. Instalação: `npm install`
+2. No diretório do projeto, você pode executar: `npm start`
+
