@@ -1,9 +1,11 @@
-function App() {
+import CardComponent from "./components/CardComponent";
+
+export default function App() {
   return (
     <div className="App">
-      <h1>First Commit</h1>    
+      <main>
+        <CardComponent />
+      </main>
     </div>
   );
 }
-
-export default App;

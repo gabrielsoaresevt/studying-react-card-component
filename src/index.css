@@ -1,13 +1,132 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  background-color: #28223F;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.card-component__list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-component__list__item {
+	max-width: 340px;
+	padding-top: 30px;
+  color: #B3B8CD;
+  background-color: #231E39;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	text-align: center;
+  position: relative;
+  flex: 1 1 300px;
+}
+
+.card-component__list__item header span {
+  color: #231E39;
+	background-color: #FEBB0B;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+  text-transform: uppercase;
+}
+
+.card-component__list__item header .card-component__list__item__img img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  padding: 7px;
+  border: 1px solid #03BFCB;
+}
+
+.card-component__list__item .card-component__list__item__info h2 {
+  margin: 10px 0 0 0;
+  font-size: 22px;
+}
+
+.card-component__list__item .card-component__list__item__info h3 {
+  margin: 7px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.card-component__list__item .card-component__list__item__info p {
+  margin: 15px auto 30px auto;
+  font-size: 12px;
+  max-width: 200px;
+  font-size: 14px;
+}
+
+.card-component__list__item__info .card-component__list__item__info__link a {
+  margin: 5px;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: #03BFCB;
+	border: 1px solid #03BFCB;
+  border-radius: 3px;
+  color: #231E39;
+  padding: 10px 25px;
+}
+
+.card-component__list__item__info .card-component__list__item__info__link a:nth-child(2) {
+  background-color: transparent;
+	color: #02899C;
+}
+
+.card-component__list__item footer {
+  background-color: #1F1A36;
+  text-align: left;
+	padding: 15px;
+	margin-top: 40px;
+  font-size: 12px;
+}
+
+.card-component__list__item footer span {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.card-component__list__item footer ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card-component__list__item footer ul li {
+  border: 1px solid #2D2747;
+	border-radius: 2px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
 }
